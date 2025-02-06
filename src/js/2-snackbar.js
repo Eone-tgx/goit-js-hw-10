@@ -10,7 +10,7 @@ const refs = {
 refs.form.addEventListener('submit', evt => {
   evt.preventDefault();
 
-  const delay = Number(refs.delayInput.value);
+  const delay = refs.delayInput.value;
 
   const selectedState = [...refs.stateInputs].find(
     input => input.checked
